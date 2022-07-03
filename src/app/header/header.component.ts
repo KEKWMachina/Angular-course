@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  @Output() sectionSelected = new EventEmitter<string>();
 
-  constructor() { }
+  selectSection(event: Event) {
+    const input = event.target as HTMLElement;
 
-  ngOnInit(): void {
+    this.sectionSelected.emit(input.innerText);
   }
-
 }

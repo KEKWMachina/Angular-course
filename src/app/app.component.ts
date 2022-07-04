@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  activeSection: string = 'Shopping List';
+  activeSection: string = 'Recipes';
 
   onSectionSelected(section: string): void {
     this.activeSection = section;

@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { Ingredient } from '../ingredients.model';
+import { Ingredient } from '../../ingredients.model';
 
 @Component({
   selector: 'app-shopping-edit',
